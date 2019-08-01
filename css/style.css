@@ -154,9 +154,14 @@ input[type=text], select, textarea {
   input[type=submit]:hover {
     background-color: #45a049;
   }
-  .cl-container label{
+  .cl-container label ,.cr-container{
       color: #fff;
   }
-  .cl-container{
+  .cl-container, .cr-container{
       margin: 10%
+  }
+  .footer{
+        text-align: center;
+        background-color: black;
+        color: #fff;
   }
