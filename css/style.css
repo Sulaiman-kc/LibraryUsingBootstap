@@ -1,0 +1,118 @@
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.nav-bar{
+    background-image: url("../img/library1.jpg");
+    /* height: 35rem; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    background-color: rgba(19, 19, 19, 0.568);
+}
+.navbar a{
+    color: aliceblue;
+    margin: 0px;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    transition-duration: .2s;
+}
+.navbar a:hover{
+    background-color: black;
+    color: aliceblue;
+}
+.navbar{
+    margin: 0 !important;
+    padding: 0 !important;  
+}
+.row{
+    width: 100%;
+}
+.logo img{
+    width: 64px;
+}
+.logo a:hover{
+    background-color: transparent;
+}
+.lname p{
+    text-align: center;
+    margin: 7% 0;
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: 900;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 3px;
+}
+.bl-content{
+    background-color: rgba(0, 0, 0, 0.555);
+    height: 200px;
+    width: 80%;
+    margin: 20% 0;
+    padding: 2%;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 3px;
+}
+.br-content{
+    background-color: rgba(0, 0, 0, 0.555);
+    height: 350px;
+    padding: 5%;
+    margin: 5%;
+    color: aliceblue;
+    margin: 20% 2%;
+    border-radius: 3px;
+}
+.btn-in{
+    letter-spacing: 0px;
+    font: size 12px;
+    width: 40%;
+    margin: 4%;
+    width: 40%;
+    background-color: rgb(190, 101, 49);
+    color: black;
+    transition-duration: 0.3s;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+.btn-up{
+    letter-spacing: 0px;
+    font: size 12px;
+    width: 40%;
+    margin: 4%;
+    width: 40%;
+    border: 2px solid rgb(190, 101, 49) !important;
+    background-color: transparent;
+    color: white;
+    transition-duration: 0.3s;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+.btn-in:hover , .btn-up:hover{
+    background-color: rgb(189, 89, 32);
+    color: rgb(32, 31, 31);
+}
+
+.news-container{
+    background-color: #fff;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem;
+    transition: all .2s ease-in-out;
+}
+.news-container:hover{
+    transform: scale(1.05);
+}
+.news h1{
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 900
+}
