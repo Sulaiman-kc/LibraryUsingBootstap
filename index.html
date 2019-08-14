@@ -15,21 +15,29 @@
 </head>
 <body>
     <section class="nav-bar">
-        <div class="navbar navbar-expand-md sticky-top navbar-fixed-top">
-            <div class="container">
+        <div class="navbar navbar-expand-md fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" >
+                <span class="navbar-toggler-icon"></span><img src="img/logo1.png" alt="" width="50px" height="50px">
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="logo navbar-nav mr-auto">
                     <li class="nav-items"><a href=""><img src="img/logo1.png" alt=""> </a></li>
                     <li class="nav-items lname"><p>Library</p></li>
                 </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-items"><a class="nav-link" href="">Home</a></li>
-                    <li class="nav-items"><a class="nav-link" href="">News</a></li>
-                    <li class="nav-items"><a class="nav-link" href="">About</a></li>
-                    <li class="nav-items"><a class="nav-link" href="">Contact</a></li>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-items"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-items"><a class="nav-link" href="#news">News</a></li>
+                    <li class="nav-items"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-items"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
-        <div class="row banner">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row banner" id="home">
             <div class="col-md-8 banner-left row align-items-center justify-content-center">
                 <div class="bl-content">
                     <h1>Library</h1>
@@ -38,23 +46,23 @@
             </div>
             <div class="col-md-4 banner-right">
                 <div class="br-content">
-                    <form action="">
+                    <form action="#" name="signin">
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input type="email" class="form-control" placeholder="ictak@example.com">
+                            <input name="semail" type="email" class="form-control" placeholder="ictak@example.com">
                         </div> <br>
                         <div class="form-group">
                             <label for="password">Password:</label>
-                            <input type="password" class="form-control" placeholder="password">
+                            <input name="spassword" type="password" class="form-control" placeholder="password">
                         </div> <br>
-                        <button type="submit" class="btn-in">Sign In</button>
-                        <button type="submit" class="btn-up">Sign Up</button>
+                        <button type="submit" class="btn-in" onclick="return signIn()">Sign In</button>
+                        <button formaction="signup.html" type="submit" class="btn-up" >Sign Up</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    <section class="news">
+    <section class="news" id="news">
         <h1>News</h1>
         <div class="row">
             <div class="col-md-6">
@@ -85,23 +93,23 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-container container">
             <h1>About Us</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum accusantium aperiam quia maxime velit voluptatem, at magni architecto culpa quaerat impedit reprehenderit minus sint debitis. Possimus ducimus, tenetur ipsa nostrum at dolorem quae! Quia, quis sed nulla omnis similique saepe atque, ut totam sit est beatae? Quis fugiat dolores optio corrupti qui quidem mollitia sed accusamus commodi fugit esse quia, exercitationem ut corporis tempore blanditiis nihil minus nulla nesciunt repellendus voluptate ipsum incidunt suscipit! Quas ullam iusto, obcaecati mollitia iure consequuntur voluptatibus. Possimus aspernatur nemo voluptate amet adipisci tempora eum quisquam numquam cupiditate, id dolor neque nihil corrupti dolorum. Minus quae amet eaque vel sunt iste dolore praesentium accusamus error vero velit rem natus sit aliquam, reprehenderit, voluptas a libero autem ratione harum? At a distinctio tempore placeat rem perferendis, beatae tempora suscipit pariatur cum consequatur porro atque ratione soluta quidem necessitatibus nobis minima magni? Vero similique velit, quas sit, adipisci vitae fuga itaque id et eos minus error minima repellendus soluta praesentium. Porro earum cum perspiciatis saepe! Consequatur distinctio iusto laboriosam, saepe ullam omnis sit similique eius rerum hic qui repudiandae eaque odio ipsa magnam, maiores, molestias sint eligendi repellat rem assumenda alias aliquid unde est. Dolorem, nemo labore!</p>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <h1>Contact</h1>
         <div class="row">
             <div class="contact-left col-md-6">
                 <div class="cl-container">
-                    <form action="">
+                    <form action="#" name="contact" onsubmit="return cform()">
                         <label for="fname">First Name</label> <br>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name.."> <br>
+                        <input type="text" id="fname" name="cname" placeholder="Your name.."> <br>
                     
-                        <label for="lname">Last Name</label> <br>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name.."> <br>
+                        <label for="lname">E-Mail</label> <br>
+                        <input type="text" id="lname" name="cemail" placeholder="Your Email"> <br>
                     
                         <label for="subject">Subject</label> <br>
                         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> <br>
@@ -129,5 +137,6 @@
     <section class="footer">
             <p>@2019 | SATS</p>
     </section>
+    <script src="js/validation.js"></script>
     </body>
 </html>

@@ -7,14 +7,15 @@ body, html{
     letter-spacing: 3px;
 }
 .nav-bar{
-    background-image: url("../img/library1.jpg");
+    background-image: url("../img/library.jpg");
     /* height: 35rem; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 42rem;
 }
 .navbar{
-    background-color: rgba(19, 19, 19, 0.568);
+    background-color: rgba(19, 19, 19, 0.712);
 }
 .navbar a{
     color: aliceblue;
@@ -50,8 +51,9 @@ body, html{
     font-family: 'Titillium Web', sans-serif;
     letter-spacing: 3px;
 }
+
 .bl-content{
-    background-color: rgba(0, 0, 0, 0.555);
+    background-color: rgba(0, 0, 0, 0.712);
     height: 200px;
     width: 80%;
     margin: 20% 0;
@@ -61,7 +63,7 @@ body, html{
     border-radius: 3px;
 }
 .br-content{
-    background-color: rgba(0, 0, 0, 0.555);
+    background-color: rgba(0, 0, 0, 0.712);
     height: 350px;
     padding: 5%;
     margin: 5%;
@@ -131,7 +133,7 @@ h1{
     color: #fff;
 }
 input[type=text], select, textarea {
-    width: 70%;
+    width: 90%;
     padding: 12px;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
@@ -164,4 +166,31 @@ input[type=text], select, textarea {
         text-align: center;
         background-color: black;
         color: #fff;
+  }
+  .footer p{
+      margin: 0;
+  }
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("../img/logo1.png");
+    float: left;
+  }
+  @media screen and (max-width: 765px) {
+    .logo .nav-items{
+        display: none;  
+    }
+    .navbar-nav .nav-items a{
+        width: 100%;
+    }
+    .banner-right{
+        margin: 0 5% 0 10%;
+    }
+    .banner-left{
+        margin: 0 0% 0 5%!important;  
+    }
+    .bl-content{
+        margin: 0;
+    }
+    .cl-container{
+        text-align: center;
+    }
   }
