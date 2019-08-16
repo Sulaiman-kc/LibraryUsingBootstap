@@ -9,36 +9,35 @@ function form()
    
     if (firstName == "")                                  
     { 
-        alert("Please enter your first name."); 
-        firstName.focus(); 
+        alert("Please enter your last name"); 
         return false; 
     } 
    
     if (lastName == "")                               
     { 
         alert("Please enter your last name"); 
-        lastName.focus(); 
+        // lastName.focus(); 
         return false; 
     } 
        
     if (email.value == "")                                   
     { 
         alert("Please enter a valid e-mail address."); 
-        email.focus(); 
+        // email.focus(); 
         return false; 
     } 
    
     if (email.value.indexOf("@", 0) < 0)                 
     { 
         alert("Please enter a valid e-mail address."); 
-        email.focus(); 
+        // email.focus(); 
         return false; 
     } 
    
     if (email.value.indexOf(".", 0) < 0)                 
     { 
         alert("Please enter a valid e-mail address."); 
-        email.focus(); 
+        // email.focus(); 
         return false; 
     } 
     if (phone == "")                           
@@ -50,39 +49,39 @@ function form()
     if (!Number.isInteger(Number(phone)))                           
     { 
         window.alert("Please a valid mobile number."); 
-        phone.focus(); 
+        // phone.focus(); 
         return false; 
     } 
     if (phone.length != 10)                           
     { 
         window.alert("Please a valid mobile number."); 
-        phone.focus(); 
+        // phone.focus(); 
         return false; 
     } 
    
     if (password == "")                        
     { 
         window.alert("Please enter your password"); 
-        password.focus(); 
+        // password.focus(); 
         return false; 
     } 
     if (password.length < 8)                        
     { 
         window.alert("Password must contain 8 letters"); 
-        password.focus(); 
+        // password.focus(); 
         return false; 
     } 
    
     if (confirmPassword == "")                        
     { 
         window.alert("Please enter your confirm Password"); 
-        password.focus(); 
+        // password.focus(); 
         return false; 
     } 
     if (confirmPassword != password)                        
     { 
         window.alert("Missmatch on confirm password"); 
-        password.focus(); 
+        // password.focus(); 
         return false; 
     } 
     alert("Welcome " + firstName + " " + lastName);
@@ -100,36 +99,37 @@ function signIn()
     if (semail.value == "")                                   
     { 
         alert("Please enter a valid e-mail address."); 
-        semail.focus(); 
+        // semail.focus(); 
         return false; 
     } 
    
     if (semail.value.indexOf("@", 0) < 0)                 
     { 
         alert("Please enter a valid e-mail address."); 
-        semail.focus(); 
+        // semail.focus(); 
         return false; 
     } 
    
     if (semail.value.indexOf(".", 0) < 0)                 
     { 
         alert("Please enter a valid e-mail address."); 
-        semail.focus(); 
+        // semail.focus(); 
         return false; 
     } 
     if (spassword == "")                        
     { 
         window.alert("Please enter your password"); 
-        spassword.focus(); 
+        // spassword.focus(); 
         return false; 
     } 
     if (spassword.length < 8)                        
     { 
         window.alert("Password must contain 8 letters"); 
-        spassword.focus(); 
+        // spassword.focus(); 
         return false; 
     } 
-    alert("You are successfully signed in")
+    alert("You are successfully signed in");
+    return true;
 }
 function cform(){
 
@@ -139,27 +139,27 @@ function cform(){
     if (cname == "")                                  
     { 
         alert("Please enter your name."); 
-        cname.focus(); 
+        // cname.focus(); 
         return false; 
     } 
     if (cemail.value == "")                                   
     { 
         alert("Please enter a valid e-mail address."); 
-        cemail.focus(); 
+        // cemail.focus(); 
         return false; 
     } 
    
     if (cemail.value.indexOf("@", 0) < 0)                 
     { 
         alert("Please enter a valid e-mail address."); 
-        cemail.focus(); 
+        // cemail.focus(); 
         return false; 
     } 
    
     if (cemail.value.indexOf(".", 0) < 0)                 
     { 
         alert("Please enter a valid e-mail address."); 
-        cemail.focus(); 
+        // cemail.focus(); 
         return false; 
     } 
     return true
